@@ -3,7 +3,5 @@
   "lib": {
     "entryFile": "./src/lib/public_api.ts"
   },
-  "externals": {
-    "rxjs/Rx": "rxjs"
-  }
+  "whitelistedNonPeerDependencies": ["angular", "core-js", "rxjs", "zone.js"]
 }
