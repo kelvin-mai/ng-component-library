@@ -1,0 +1,9 @@
+{
+  "$schema": "./node_modules/ng-packagr/package.schema.json",
+  "lib": {
+    "entryFile": "./src/lib/public_api.ts"
+  },
+  "externals": {
+    "rxjs/Rx": "rxjs"
+  }
+}
