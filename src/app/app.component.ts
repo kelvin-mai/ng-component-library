@@ -9,6 +9,6 @@ export class AppComponent {
   title = 'app';
 
   handleClick() {
-    alert('ok');
+    console.log('boop');
   }
 }

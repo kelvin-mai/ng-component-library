@@ -1,12 +1,30 @@
 button {
-  background-color: #4875b4;
   padding: 0.5rem 2rem;
+  margin: 0.5rem;
   font-size: 1rem;
-  color: white;
-  border-radius: 0.3rem;
+  color: black;
+  border: 0.1rem solid;
+  border-radius: 0.5rem;
+  text-transform: uppercase;
+  transition: all 0.3s ease-out;
+
+  &:focus,
+  &:active {
+    outline: none;
+  }
+}
+.primary {
+  border-color: var(--primary);
+  color: var(--primary);
+
+  &:hover,
+  &:active {
+    background-color: var(--primary);
+    color: white;
+  }
 }
 
-button:focus,
-button:active {
-  outline: none;
+.clear {
+  border: none;
+  color: black;
 }

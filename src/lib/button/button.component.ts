@@ -1,5 +1,4 @@
-import { Component, Output } from '@angular/core';
-import { EventEmitter } from 'events';
+import { Component, Output, Input, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'mai-button',
@@ -7,6 +6,6 @@ import { EventEmitter } from 'events';
   styleUrls: ['./button.component.scss']
 })
 export class ButtonComponent {
-  @Output() onClick: EventEmitter = new EventEmitter();
-  color = 'blue';
+  @Input() btnStyle: string;
+  @Output() onClick: EventEmitter<any> = new EventEmitter();
 }
